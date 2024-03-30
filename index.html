@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Movie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="modal" id="myModal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="img01" src="" alt="yoddha">
+            <div id="caption" class="caption"></div>
+        </div>
+     
+     
+        <div class="navbar">
+            <div class="navbar-container">
+                <div class="logo-container"><h1 class="logo">CineFile</h1></div>
+                <div class="menu-container">
+                    <ul class="menu-list">
+                        <li class="menu-list_item">Home</li>
+                        <li class="menu-list_item">Movies</li>
+                        <li class="menu-list_item">Series</li>
+                        <li class="menu-list_item">Popular</li>
+                    </ul>
+                </div>
+                <div class="profile-container">
+                    <img class="profile-picture" src="/Images/punisher.png">
+                    <div class="profile-txt_container">
+                        <span class="profile-txt">Profile</span>
+                        <i class="fa-solid fa-caret-down" style="color: white;"></i>
+                    </div>
+                    <div class="toggle">
+                        <i class="fa-solid fa-moon" style="color:gold"></i>
+                        <i class="fa-solid fa-sun" style="color: gold;"></i>
+
+                        <div class="toggle-ball"></div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    
+        <div class="sidebar">
+            
+            <i class="left-menu-icons fa-solid fa-magnifying-glass glass"></i>
+            <i class="left-menu-icons fa-solid fa-house"></i>
+            <i class="left-menu-icons fa-solid fa-users"></i>
+            <i class="left-menu-icons fa-solid fa-clapperboard"></i>
+            <i class="left-menu-icons fa-solid fa-tv"></i>
+        </div>
+        <div class="container">
+            <div class="content-container">
+                <div class="featured-content"
+                style="background:linear-gradient(to bottom, rgba(0, 0, 0, 0), #161515), url(/Images/killbill.jpg);">
+                </div>
+                <div class="movie-list-container">
+                    <h1 class="movie-list-title">NEW RELEASES</h1>
+                    <div class="movie-list-wrapper">
+                        <div class="movie-list">
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="/Images/kingdom.jpg" alt="">
+                                <img class="modal-img" src="/Images/poorthings2.png" alt="">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: yellow;"> 8.9</i>
+                                </div>
+                                <span class="movie-list-item-title">Kingdom Of the planet of Apes</span>
+                                <p class="movie-list-item-desc">Ex-UFC fighter Dalton takes a job as a bouncer at a Florida Keys roadhouse, only to discover that this paradise is not all it seems.</p>
+                                <button class="movie-list-item-button">Review</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="/Images/dune.jpg" alt="">
+                                <img class="modal-img" src="/Images/madgaon.jpg" alt="">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: yellow;"> 8.9</i>
+                                </div>
+                                <span class="movie-list-item-title">Dune: Part Two</span>
+                                <p class="movie-list-item-desc">Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.</p>
+                                <button class="movie-list-item-button">Review</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="/Images/arg.jpg" alt="">
+                                <img class="modal-img" src="/Images/yoddha.jpg" alt="">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: yellow;"> 8.9</i>
+                                </div>
+                                <span class="movie-list-item-title">Argylle</span>
+                                <p class="movie-list-item-desc">A reclusive author who writes espionage novels about a secret agent and a global spy syndicate realizes the plot of the new book she's writing starts to mirror real-world events, in real time.</p>
+                                <button class="movie-list-item-button">Review</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="/Images/kungfu4.jpg" alt="">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: yellow;"> 8.9</i>
+                                </div>
+                                <span class="movie-list-item-title">Kung Fu Panda 4</span>
+                                <p class="movie-list-item-desc">After Po is tapped to become the Spiritual Leader of the Valley of Peace, he needs to find and train a new Dragon Warrior, while a wicked sorceress plans to re-summon all the master villains whom Po has vanquished to the spirit realm.</p>
+                                 <button class="movie-list-item-button">Review</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="/Images/madgaon.jpg" alt="">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: yellow;"> 8.9</i>
+                                </div>
+                                <span class="movie-list-item-title">Madgaon Express</span>
+                                <p class="movie-list-item-desc">The journey of three childhood friends who embark on a trip to Goa that goes completely off-track</p>
+                               <button class="movie-list-item-button">Review</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="/Images/yoddha.jpg" alt="">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: yellow;"> 8.9</i>
+                                </div>
+                                <span class="movie-list-item-title">Yodha</span>
+                                <p class="movie-list-item-desc">After terrorists hijack a passenger plane, an off-duty soldier aboard devises a strategy to defeat the hijackers and ensure the passengers' survival when the engine fails.</p>
+                                <button class="movie-list-item-button">Review</button>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                    <div class="movie-list-wrapper">
+                        <div class="movie-list">
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="/Images/kingdom.jpg" alt="">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: yellow;"> 8.9</i>
+                                </div>
+                                <span class="movie-list-item-title">Kingdom Of the planet of Apes</span>
+                                <p class="movie-list-item-desc">Ex-UFC fighter Dalton takes a job as a bouncer at a Florida Keys roadhouse, only to discover that this paradise is not all it seems.</p>
+                                <button class="movie-list-item-button">Review</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="/Images/kingdom.jpg" alt="">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: yellow;"> 8.9</i>
+                                </div>
+                                <span class="movie-list-item-title">Kingdom Of the planet of Apes</span>
+                                <p class="movie-list-item-desc">Ex-UFC fighter Dalton takes a job as a bouncer at a Florida Keys roadhouse, only to discover that this paradise is not all it seems.</p>
+                                <button class="movie-list-item-button">Review</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="/Images/kingdom.jpg" alt="">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: yellow;"> 8.9</i>
+                                </div>
+                                <span class="movie-list-item-title">Kingdom Of the planet of Apes</span>
+                                <p class="movie-list-item-desc">Ex-UFC fighter Dalton takes a job as a bouncer at a Florida Keys roadhouse, only to discover that this paradise is not all it seems.</p>
+                                <button class="movie-list-item-button">Review</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="/Images/kingdom.jpg" alt="">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: yellow;"> 8.9</i>
+                                </div>
+                                <span class="movie-list-item-title">Kingdom Of the planet of Apes</span>
+                                <p class="movie-list-item-desc">Ex-UFC fighter Dalton takes a job as a bouncer at a Florida Keys roadhouse, only to discover that this paradise is not all it seems.</p>
+                                 <button class="movie-list-item-button">Review</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="/Images/kingdom.jpg" alt="">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: yellow;"> 8.9</i>
+                                </div>
+                                <span class="movie-list-item-title">Kingdom Of the planet of Apes</span>
+                                <p class="movie-list-item-desc">Ex-UFC fighter Dalton takes a job as a bouncer at a Florida Keys roadhouse, only to discover that this paradise is not all it seems.</p>
+                               <button class="movie-list-item-button">Review</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="/Images/kingdom.jpg" alt="">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: yellow;"> 8.9</i>
+                                </div>
+                                <span class="movie-list-item-title">Kingdom Of the planet of Apes</span>
+                                <p class="movie-list-item-desc">Ex-UFC fighter Dalton takes a job as a bouncer at a Florida Keys roadhouse, only to discover that this paradise is not all it seems.</p>
+                                <button class="movie-list-item-button">Review</button>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                    <div class="movie-list-wrapper">
+                        <div class="movie-list">
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="/Images/kingdom.jpg" alt="">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: yellow;"> 8.9</i>
+                                </div>
+                                <span class="movie-list-item-title">Kingdom Of the planet of Apes</span>
+                                <p class="movie-list-item-desc">Ex-UFC fighter Dalton takes a job as a bouncer at a Florida Keys roadhouse, only to discover that this paradise is not all it seems.</p>
+                                <button class="movie-list-item-button">Review</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="/Images/kingdom.jpg" alt="">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: yellow;"> 8.9</i>
+                                </div>
+                                <span class="movie-list-item-title">Kingdom Of the planet of Apes</span>
+                                <p class="movie-list-item-desc">Ex-UFC fighter Dalton takes a job as a bouncer at a Florida Keys roadhouse, only to discover that this paradise is not all it seems.</p>
+                                <button class="movie-list-item-button">Review</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="/Images/kingdom.jpg" alt="">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: yellow;"> 8.9</i>
+                                </div>
+                                <span class="movie-list-item-title">Kingdom Of the planet of Apes</span>
+                                <p class="movie-list-item-desc">Ex-UFC fighter Dalton takes a job as a bouncer at a Florida Keys roadhouse, only to discover that this paradise is not all it seems.</p>
+                                <button class="movie-list-item-button">Review</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="/Images/kingdom.jpg" alt="">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: yellow;"> 8.9</i>
+                                </div>
+                                <span class="movie-list-item-title">Kingdom Of the planet of Apes</span>
+                                <p class="movie-list-item-desc">Ex-UFC fighter Dalton takes a job as a bouncer at a Florida Keys roadhouse, only to discover that this paradise is not all it seems.</p>
+                                 <button class="movie-list-item-button">Review</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="/Images/kingdom.jpg" alt="">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: yellow;"> 8.9</i>
+                                </div>
+                                <span class="movie-list-item-title">Kingdom Of the planet of Apes</span>
+                                <p class="movie-list-item-desc">Ex-UFC fighter Dalton takes a job as a bouncer at a Florida Keys roadhouse, only to discover that this paradise is not all it seems.</p>
+                               <button class="movie-list-item-button">Review</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="/Images/kingdom.jpg" alt="">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: yellow;"> 8.9</i>
+                                </div>
+                                <span class="movie-list-item-title">Kingdom Of the planet of Apes</span>
+                                <p class="movie-list-item-desc">Ex-UFC fighter Dalton takes a job as a bouncer at a Florida Keys roadhouse, only to discover that this paradise is not all it seems.</p>
+                                <button class="movie-list-item-button">Review</button>
+                            </div>
+                            </div>
+                            <i class="fa-solid fa-chevron-right arrow"></i>
+                        </div>
+                   </div>
+              </div>
+        </div>
+
+    
+        <script src="script.js"></script>
+    </body>
+</html>
