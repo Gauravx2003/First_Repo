@@ -1,2 +1,3 @@
 # First_Repo
-Just for testing
+Movie Reviewing website with basic features inspired from IMDb
+
