@@ -1,14 +1,3 @@
-/*const arrows=document.querySelectorAll(".arrow");
-const Lists=document.querySelectorAll(".movie-list");
-
-arrows.forEach((arrow,i)=>{
-    arrow.addEventListener("click",()=>{
-        Lists[i].style.transform=`translateX(${
-            Lists[i].computedStyleMap().get("transform")[0].x.value
-    -270}px)`;
-    });
-});*/
-
 const ball=document.querySelector(".toggle-ball");
 const items=document.querySelectorAll(
     ".container,.movie-list-container,.navbar-container,.sidebar,.left-menu-icons,.toggle"
@@ -21,53 +10,55 @@ ball.addEventListener("click",()=>{
     ball.classList.toggle("active")
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("myModal");
+    const modalImg = document.getElementById("modalImg");
+    const captionText = document.getElementById("caption");
 
-/*const search = document.querySelector(".search-wrapper");
-const input = search.querySelector("input");
+    // Function to open the modal
+    function openModal(movie) {
+        modal.style.display = "block";
+        modalImg.src = movie.image;
+        captionText.innerHTML = `<div class=\"modaling\"><h2>${movie.title}</h2><p id=\"rat\">Rating: ${movie.rating}</p><p id=\"desc\">${movie.descrip}</p></div>`;
+    }
 
-search.addEventListener("mouseenter", () => {
-  if (!input.matches(":focus")) {
-    search.classList.add("active");
-  }
+    // Function to close the modal
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    // Delegate click event handling to the movie list container
+    const movieListContainer = document.querySelector(".movie-list");
+    movieListContainer.addEventListener("click", function(event) {
+        // Check if the clicked element is a review button
+        if (event.target.classList.contains("movie-list-item-button")) {
+            // Find the index of the clicked review button
+            const buttonIndex = Array.from(movieListContainer.querySelectorAll(".movie-list-item-button")).indexOf(event.target);
+
+            // Load data from JSON based on the index
+            fetch("content.json")
+                .then(response => response.json())
+                .then(data => {
+                    const movie = data[buttonIndex];
+                    openModal(movie);
+                })
+                .catch(error => console.error("Error fetching data:", error));
+        }
+    });
+
+    // Attach event listener to close modal button
+    document.querySelector(".close").addEventListener("click", closeModal);
 });
 
-search.addEventListener("mouseleave", () => {
-  if (!input.matches(":focus") && !input.value.trim()) {
-    search.classList.remove("active");
-  }
-});*/
+function scrollToSeries() {
+    var seriesSection = document.getElementById("movies");
+    seriesSection.scrollIntoView({behavior: "smooth"});
+}
 
-  // Get the modal
-  var modal = document.getElementById("myModal");
+function redirect(){
+    location.assign("movie.html");
+}
 
-  // Get the image and insert it inside the modal - use its "alt" text as a caption
-  var img = document.querySelectorAll(".movie-list-item-img");
-  var modalImg = document.getElementById("img01");
-  var modals=document.getElementsByClassName("modal-img");
-  var captionText = document.getElementById("caption");
-  //console.log(img)
-  var movieListItems = document.querySelectorAll('.movie-list-item');
-
-            // Function to handle image click
-            function handleImageClick(index) {
-                Index=index;
-                // Add your logic here
-            }
-
-            // Attach click event listeners to movie list items
-            movieListItems.forEach(function(item, index) {
-                var img = item.querySelector('.movie-list-item-img');
-                img.onclick = function() {
-                    //console.log(index);
-                    modal.style.display = "block";
-                    modalImg.src = modals[index].src;
-                    captionText.innerHTML = this.alt;
-                };
-            });
-  
-        
-
-  // When the user clicks on <span> (x), close the modal
-  function closeModal() {
-      modal.style.display = "none";
-  }
+function redirect2(){
+    location.assign("series.html");
+}
